@@ -1,4 +1,25 @@
 ---
+debug: false
+
+logging:
+  level:
+    org.springframework.security: info
+    org.springframework.web: info
+
 spring:
   profiles:
     default: local
+  mvc:
+    log-request-details: true
+
+actuator:
+  health:
+    path: /actuator/health
+  profile-db-details:
+    path: /actuator/profile-db-details
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, profile-db-details

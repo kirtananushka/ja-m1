@@ -11,5 +11,3 @@ spring:
 custom:
   datasource:
     enable: true
-
-    

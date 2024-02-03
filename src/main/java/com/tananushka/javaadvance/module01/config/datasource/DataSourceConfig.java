@@ -1,8 +1,9 @@
-package com.tananushka.javaadvance.module01.config;
+package com.tananushka.javaadvance.module01.config.datasource;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ import javax.sql.DataSource;
 @AllArgsConstructor
 @Slf4j
 public class DataSourceConfig {
-    
+
     private final DataSourceProperties dataSourceProperties;
 
     @Bean

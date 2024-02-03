@@ -1,4 +1,4 @@
-package com.tananushka.javaadvance.module01.config;
+package com.tananushka.javaadvance.module01.config.datasource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
